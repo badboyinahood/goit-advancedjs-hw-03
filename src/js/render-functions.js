@@ -1,6 +1,3 @@
-// render-functions.js
-
-// Создаём разметку карточек изображений
 export function createGalleryMarkup(images) {
   return images
     .map(
@@ -35,12 +32,10 @@ export function createGalleryMarkup(images) {
     .join('');
 }
 
-// Очищает содержимое галереи
 export function clearGallery(container) {
   container.innerHTML = '';
 }
 
-// Добавляет разметку в галерею
 export function renderGallery(container, markup) {
   container.innerHTML = markup;
 }
